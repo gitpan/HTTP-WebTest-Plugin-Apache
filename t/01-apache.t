@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# $Id: 01-apache.t,v 1.2 2002/12/12 22:50:57 m_ilya Exp $
+# $Id: 01-apache.t,v 1.3 2002/12/16 21:14:00 m_ilya Exp $
 
 # This script tests local web files test mode
 
@@ -19,7 +19,7 @@ use HTTP::WebTest::Utils qw(copy_dir);
 
 use vars qw($HOSTNAME $PORT $URL $TEST_NUM %CONFIG);
 
-require '.config';
+do '.config';
 my $APACHE_EXEC = $CONFIG{APACHE_EXEC};
 
 BEGIN { $TEST_NUM = 19; plan tests => $TEST_NUM }

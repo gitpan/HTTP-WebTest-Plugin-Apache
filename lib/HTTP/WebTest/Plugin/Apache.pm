@@ -1,8 +1,8 @@
-# $Id: Apache.pm,v 1.4 2002/12/14 20:15:00 m_ilya Exp $
+# $Id: Apache.pm,v 1.5 2002/12/16 21:16:51 m_ilya Exp $
 
 package HTTP::WebTest::Plugin::Apache;
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 =head1 NAME
 
@@ -444,9 +444,9 @@ sub check_apache {
     $self->start_apache;
 }
 
-# forks a child process that starts Apache in on a random
-# private/dynamic port number.  Verifies that Apache has started by
-# fetching a test page and searching the fetched page for a tag line.
+# forks a child process that starts Apache on a random private/dynamic
+# port number.  Checks if Apache was started by fetching a test page
+# and searching the fetched page for a tag line.
 sub start_apache {
     my $self = shift;
 
