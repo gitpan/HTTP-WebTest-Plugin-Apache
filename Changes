@@ -1,0 +1,7 @@
+$Id: Changes,v 1.1 2002/12/12 22:48:32 m_ilya Exp $
+
+Revision history for Perl module HTTP::WebTest::Plugin::Apache.
+
+CURRENT VERSION
+
+* First version (based on code used to be in HTTP::WebTest distro).
